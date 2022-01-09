@@ -1,0 +1,270 @@
+.header {
+  padding: 20px;
+}
+
+.header__inner-side {
+  display: flex;
+  min-width: 100%;
+}
+
+.header__small-search {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__inner-side {
+    min-width: 100%;
+  }
+  
+  // Small Screen
+  
+    .header.header__search--open .header__small-search{
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #999;
+      z-index: 5;
+    }
+
+  .header__small-search {
+    width: 100vw;
+    height: 83px;
+  }
+  
+  .small-screen__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBEBEB;
+    opacity: 0.3;
+    border-radius: 22px;
+    padding-left: 23px;
+    margin: 15px 15px;
+  }
+
+  .small-screen__input {
+    border: none;
+    background-color: rgba(235, 235, 235, 1);
+    font-size: 16px;
+    line-height: 20px;
+    color: #30384C;
+    width: 100%;
+  }
+
+  .small-screen__input:focus {
+    outline: none;
+  }
+
+  .small-screen__btn {
+    padding: 13px;
+    position: relative;
+  }
+
+  .small-screen__btn img {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    left: 2px;
+    top: 5px;
+    width: 17px;
+  }
+}
+
+// Header Left 
+
+
+.header__left-side {
+  display: flex;
+  align-items: center;
+}
+
+.header__burger {
+  display: block;
+  margin-right: 25px;
+}
+
+.header__logo {
+  width: 116px;
+  height: 25px;
+  margin-right: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    width: 100px;
+    margin-right: 20px;
+  }
+  .header__burger {
+    width: 16px;
+  } 
+}
+
+
+// Header center
+
+
+.header-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__search-form {
+  display: flex;
+  align-items: center;
+  background-color: #EBEBEB;
+  opacity: 0.3;
+  border-radius: 22px;
+  padding-left: 23px;
+  margin-left: 20px;
+}
+
+.header__search-input {
+  border: none;
+  background-color: #EBEBEB;
+  font-size: 16px;
+  line-height: 20px;
+  color: #30384C;
+  width: 830px;
+}
+
+.header__search-input:focus {
+  outline: none;
+}
+
+.header__search-btn {
+  padding: 12px 13px;
+}
+
+.header__search-btn img{
+  display: block;
+}
+
+@media screen and (max-width: 1400px) {
+  .header__search-input {
+    width: 730px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .header__search-input {
+    width: 630px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header__search-input {
+    width: 530px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header__search-input {
+    width: 430px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header__search-input {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header__search-input {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .header__center {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .header__search-form {
+    background-color: transparent;
+    margin-left: auto;
+  }
+
+  .header__search-input {
+    display: none;
+  }
+
+  .header.header__search--open .header__search-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .header__search-btn {
+    padding: 0;
+    padding-top: 11px;
+  }
+}
+
+// Header Right
+
+.header__right-side {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header__recorder-btn {
+  width: 27px;
+  height: 20px;
+  margin-right: 50px;
+  margin-left: 30px;
+}
+
+.header__more-btn {
+  width: 21px;
+  height: 21px;
+  margin-right: 50px;
+}
+
+.header__notification-btn {
+  width: 22px;
+  height: 26px;
+}
+
+.header__user-btn {
+  width: 40px;
+  height: 40px;
+  margin-left: 45px;
+}
+
+@media screen and (max-width: 800px) {
+  .header__recorder-btn {
+    margin-right: 40px;
+    margin-left: 20px;
+  }
+  
+  .header__more-btn {
+    margin-right: 40px;
+  }
+
+  .header__user-btn {
+    margin-left: 35px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header__right-side {
+    margin: 0;
+  }
+  .header__recorder-btn {
+    display: none;
+  }
+  .header__more-btn {
+    display: none;
+  }
+  .header__notification-btn {
+    display: none;
+  }
+}
